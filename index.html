@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch1 Lecture63 Palindrome number check</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+        function chechPalindrome(n) {
+            // alert(n.length)
+            //string.length
+            // alert(n.charAt(2));
+
+            var isPalindrome = false;
+            for (j = n.length; j >= 0; j--) {
+                console.log(n.charAt(j - 1));
+                for (var i = 0; i < n.length; i++){
+                    //   console.log(n.charAt(i));
+                    if (n.charAt(j - 1) == n.charAt(j - 1)) {
+                        isPalindrome = true;
+                    } else {
+                        isPalindrome = false;
+                    }
+            }
+        }
+
+        if (isPalindrome == true) {
+            alert(n + ' is a Palindrome Number');
+        } else {
+            alert(n + ' is not a Palindrome Number');
+        }
+
+        }
+       
+
+
+        
+
+
+
+
+        let number = window.prompt('Enter Your Palindrome Number');
+
+        // number = parseInt(number);
+        // alert('number');
+
+        chechPalindrome(number)
+
+
+    </script>
+
+</body>
+
+</html>
